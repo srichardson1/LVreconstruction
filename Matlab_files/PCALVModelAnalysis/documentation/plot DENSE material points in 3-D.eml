@@ -1,0 +1,134 @@
+Received: from exchange-be2.centre.ad.gla.ac.uk ([130.209.18.44]) by exchange-be3.centre.ad.gla.ac.uk with Microsoft SMTPSVC(6.0.3790.4675);
+	 Mon, 28 Jun 2010 17:07:01 +0100
+Received: from palin.cent.gla.ac.uk ([130.209.34.34]) by exchange-be2.centre.ad.gla.ac.uk with Microsoft SMTPSVC(6.0.3790.4675);
+	 Mon, 28 Jun 2010 17:07:00 +0100
+Received: from euler.maths.gla.ac.uk ([130.209.66.74])
+	by palin.cent.gla.ac.uk with esmtp (Exim 4.69)
+	(envelope-from <liu5@iupui.edu>)
+	id 1OTGrM-0001wp-8G; Mon, 28 Jun 2010 17:07:00 +0100
+Received: from cleese.cent.gla.ac.uk ([130.209.16.34])
+	by euler.maths.gla.ac.uk with esmtp (Exim 4.63)
+	(envelope-from <liu5@iupui.edu>)
+	id 1OTGrF-0000zO-Qn; Mon, 28 Jun 2010 17:06:59 +0100
+Received: from hartman.uits.indiana.edu ([129.79.1.194])
+	by cleese.cent.gla.ac.uk with esmtp (Exim 4.69)
+	(envelope-from <liu5@iupui.edu>)
+	id 1OTGrB-0005Rg-Vc; Mon, 28 Jun 2010 17:06:53 +0100
+Received: from iu-mssg-hub101.ads.iu.edu (iu-mssg-hub101.ads.iu.edu [10.79.1.150])
+	by hartman.uits.indiana.edu (8.14.2/8.13.8/IU Messaging Team) with ESMTP id o5SG6lmn027390;
+	Mon, 28 Jun 2010 12:06:47 -0400
+Received: from IU-MSSG-MBX106.ads.iu.edu ([169.254.6.249]) by
+ iu-mssg-hub101.ads.iu.edu ([10.79.1.150]) with mapi; Mon, 28 Jun 2010
+ 12:06:46 -0400
+From: "Liu, Yi" <liu5@iupui.edu>
+To: "Liu, Yi" <liu5@iupui.edu>, Xiaoyu <x.y.luo@maths.gla.ac.uk>
+CC: YunFei Zhu <yzhu@maths.gla.ac.uk>, "Kassab, Ghassan S" <gkassab@iupui.edu>
+Subject: plot DENSE material points in 3-D
+Thread-Topic: plot DENSE material points in 3-D
+Thread-Index: AQHLFtvn8eXBeKn020GjUFoT8DtW7g==
+Date: Mon, 28 Jun 2010 16:06:45 +0000
+Message-ID: <F08C6C8A809E6A49B734A725F51978E38C25@IU-MSSG-MBX106.ads.iu.edu>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach: yes
+X-MS-TNEF-Correlator:
+Content-Type: multipart/mixed;
+	boundary="_006_F08C6C8A809E6A49B734A725F51978E38C25IUMSSGMBX106adsiued_"
+MIME-Version: 1.0
+X-GLA-Spam-Scan: R
+X-GLA-Spam-Scan: R
+Return-Path: liu5@iupui.edu
+X-OriginalArrivalTime: 28 Jun 2010 16:07:01.0069 (UTC) FILETIME=[F13607D0:01CB16DB]
+
+--_006_F08C6C8A809E6A49B734A725F51978E38C25IUMSSGMBX106adsiued_
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+
+Dear Xiaoyu and Yunfei,
+         Attached are codes to plot the 3D position and displacement of the=
+ DENSE data points. This should be the first thin you need to do after proc=
+essing the raw data with DENSEView.
+         First, you need to rename your data file ??????_dispvector.txt to =
+the same format as in the file 'InputFileName.txt'. If you have multiple sl=
+ices, you need to change the first number in 'InputFileName.txt'.
+         Then, you use PlotInitialPoints.lay to view the datapoints in the =
+scanning coordinate, and use PlotDENSE_Displacement.lay to view animation o=
+f the displacement vectors (Tools---Animate---Zones)
+         Yi=
+
+--_006_F08C6C8A809E6A49B734A725F51978E38C25IUMSSGMBX106adsiued_
+Content-Type: text/x-moz-deleted; name="Deleted: InputFileName.txt"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline; filename="Deleted: InputFileName.txt"
+X-Mozilla-Altered: AttachmentDeleted; date="Mon Jun 28 17:27:24 2010"
+
+You deleted an attachment from this message. The original MIME headers for the attachment were:
+Content-Type: text/plain; name="InputFileName.txt"
+Content-Description: InputFileName.txt
+Content-Disposition: attachment; filename="InputFileName.txt"; size=223;
+	creation-date="Mon, 28 Jun 2010 16:06:01 GMT";
+	modification-date="Mon, 28 Jun 2010 16:06:01 GMT"
+Content-Transfer-Encoding: base64
+
+
+--_006_F08C6C8A809E6A49B734A725F51978E38C25IUMSSGMBX106adsiued_
+Content-Type: text/x-moz-deleted; name="Deleted: PlotDENSE_Displacement.lay"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline; filename="Deleted: PlotDENSE_Displacement.lay"
+X-Mozilla-Altered: AttachmentDeleted; date="Mon Jun 28 17:27:31 2010"
+
+You deleted an attachment from this message. The original MIME headers for the attachment were:
+Content-Type: application/octet-stream; name="PlotDENSE_Displacement.lay"
+Content-Description: PlotDENSE_Displacement.lay
+Content-Disposition: attachment; filename="PlotDENSE_Displacement.lay";
+	size=19626; creation-date="Mon, 28 Jun 2010 16:06:01 GMT";
+	modification-date="Mon, 28 Jun 2010 16:06:01 GMT"
+Content-Transfer-Encoding: base64
+
+
+--_006_F08C6C8A809E6A49B734A725F51978E38C25IUMSSGMBX106adsiued_
+Content-Type: text/x-moz-deleted; name="Deleted: PlotInitialPoints.lay"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline; filename="Deleted: PlotInitialPoints.lay"
+X-Mozilla-Altered: AttachmentDeleted; date="Mon Jun 28 17:27:37 2010"
+
+You deleted an attachment from this message. The original MIME headers for the attachment were:
+Content-Type: application/octet-stream; name="PlotInitialPoints.lay"
+Content-Description: PlotInitialPoints.lay
+Content-Disposition: attachment; filename="PlotInitialPoints.lay"; size=4400;
+	creation-date="Mon, 28 Jun 2010 16:06:01 GMT";
+	modification-date="Mon, 28 Jun 2010 16:06:01 GMT"
+Content-Transfer-Encoding: base64
+
+
+--_006_F08C6C8A809E6A49B734A725F51978E38C25IUMSSGMBX106adsiued_
+Content-Type: text/x-moz-deleted; name="Deleted: SA_00049_dispvector.txt"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline; filename="Deleted: SA_00049_dispvector.txt"
+X-Mozilla-Altered: AttachmentDeleted; date="Mon Jun 28 17:27:42 2010"
+
+You deleted an attachment from this message. The original MIME headers for the attachment were:
+Content-Type: text/plain; name="SA_00049_dispvector.txt"
+Content-Description: SA_00049_dispvector.txt
+Content-Disposition: attachment; filename="SA_00049_dispvector.txt";
+	size=319270; creation-date="Mon, 28 Jun 2010 16:06:24 GMT";
+	modification-date="Mon, 28 Jun 2010 16:06:24 GMT"
+Content-Transfer-Encoding: base64
+
+
+--_006_F08C6C8A809E6A49B734A725F51978E38C25IUMSSGMBX106adsiued_
+Content-Type: text/x-moz-deleted; name="Deleted: View_DENSEPoints.f"
+Content-Transfer-Encoding: 8bit
+Content-Disposition: inline; filename="Deleted: View_DENSEPoints.f"
+X-Mozilla-Altered: AttachmentDeleted; date="Mon Jun 28 17:27:46 2010"
+
+You deleted an attachment from this message. The original MIME headers for the attachment were:
+Content-Type: text/plain; name="View_DENSEPoints.f"
+Content-Description: View_DENSEPoints.f
+Content-Disposition: attachment; filename="View_DENSEPoints.f"; size=7663;
+	creation-date="Mon, 28 Jun 2010 16:06:24 GMT";
+	modification-date="Mon, 28 Jun 2010 16:06:24 GMT"
+Content-Transfer-Encoding: base64
+
+
+--_006_F08C6C8A809E6A49B734A725F51978E38C25IUMSSGMBX106adsiued_--

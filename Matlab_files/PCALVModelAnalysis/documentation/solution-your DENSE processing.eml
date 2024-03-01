@@ -1,0 +1,76 @@
+Received: from exchange-be2.centre.ad.gla.ac.uk ([130.209.18.44]) by exchange-be3.centre.ad.gla.ac.uk with Microsoft SMTPSVC(6.0.3790.4675);
+	 Tue, 29 Jun 2010 13:46:23 +0100
+Received: from cleese.cent.gla.ac.uk ([130.209.16.34]) by exchange-be2.centre.ad.gla.ac.uk with Microsoft SMTPSVC(6.0.3790.4675);
+	 Tue, 29 Jun 2010 13:46:23 +0100
+Received: from euler.maths.gla.ac.uk ([130.209.66.74])
+	by cleese.cent.gla.ac.uk with esmtp (Exim 4.69)
+	(envelope-from <liu5@iupui.edu>)
+	id 1OTaCl-0007Gb-Cz
+	for xyl1q@exchange.gla.ac.uk; Tue, 29 Jun 2010 13:46:23 +0100
+Received: from palin.cent.gla.ac.uk ([130.209.34.34])
+	by euler.maths.gla.ac.uk with esmtp (Exim 4.63)
+	(envelope-from <liu5@iupui.edu>)
+	id 1OTaCk-0006OG-R4
+	for x.y.luo@maths.gla.ac.uk; Tue, 29 Jun 2010 13:46:22 +0100
+Received: from hartman.uits.indiana.edu ([129.79.1.194])
+	by palin.cent.gla.ac.uk with esmtp (Exim 4.69)
+	(envelope-from <liu5@iupui.edu>)
+	id 1OTaCj-0007Ca-DH
+	for x.y.luo@maths.gla.ac.uk; Tue, 29 Jun 2010 13:46:22 +0100
+Received: from IU-MSSG-HUB103.ads.iu.edu (iu-mssg-hub103.ads.iu.edu [10.79.1.152])
+	by hartman.uits.indiana.edu (8.14.2/8.13.8/IU Messaging Team) with ESMTP id o5TCkHaZ030209
+	for <x.y.luo@maths.gla.ac.uk>; Tue, 29 Jun 2010 08:46:17 -0400
+Received: from IU-MSSG-MBX106.ads.iu.edu ([169.254.6.249]) by
+ IU-MSSG-HUB103.ads.iu.edu ([10.79.1.152]) with mapi; Tue, 29 Jun 2010
+ 08:46:17 -0400
+From: "Liu, Yi" <liu5@iupui.edu>
+To: Xiaoyu Luo <x.y.luo@maths.gla.ac.uk>
+Subject: RE: RE: problem with your DENSE processing
+Thread-Topic: RE: problem with your DENSE processing
+Thread-Index: AQHLF3Hs7zmpqnRDhkeI9893IWWRcpKY4qqZ
+Date: Tue, 29 Jun 2010 12:44:13 +0000
+Message-ID: <F08C6C8A809E6A49B734A725F51978E38DA1@IU-MSSG-MBX106.ads.iu.edu>
+References: <4C29C441.9080906@maths.gla.ac.uk>
+In-Reply-To: <4C29C441.9080906@maths.gla.ac.uk>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+Content-Type: text/plain; charset="us-ascii"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-GLA-Spam-Scan: R
+X-GLA-Spam-Score:  0.0 (/)
+X-GLA-Spam-Report: _SUMMARY_
+X-GLA-Spam-Scan: R
+Return-Path: liu5@iupui.edu
+X-OriginalArrivalTime: 29 Jun 2010 12:46:23.0669 (UTC) FILETIME=[14C64E50:01CB1789]
+
+Dear Xiaoyu,
+        I think Dr. Wen maybe right about the wall thickness.=20
+        And the method he told to get the out-of-slice displacement is exac=
+tly the same as we did last year.
+       Yi    =20
+
+________________________________________
+From: Xiaoyu Luo [x.y.luo@maths.gla.ac.uk]
+Sent: Tuesday, June 29, 2010 6:00 AM
+To: Liu, Yi
+Subject: Fwd: RE: problem with your DENSE processing
+
+Dear Yi,
+
+Here is Han's reply for your information:
+
+Hi Colin,
+To get "out of slice" displacement the protocol needs to be changed
+slightly: the number of contrasts needs to be changed from 3 to 4, and
+in DENSEView -> detailed parameters -> Z displacement =3D "Yes". That
+should do it. The breathhold will be a few seconds longer. Regarding the
+wall thickness, just keep in mind that the thickness of the tracked
+pixels start at the R wave in diastole, and therefore thinner than
+systolic thickness.
+
+Cheers,
+
+Han=

@@ -1,0 +1,379 @@
+Received: from exchange-be2.centre.ad.gla.ac.uk ([130.209.18.44]) by exchange-be3.centre.ad.gla.ac.uk with Microsoft SMTPSVC(6.0.3790.4675);
+	 Mon, 14 Jun 2010 15:46:02 +0100
+Received: from cleese.cent.gla.ac.uk ([130.209.16.34]) by exchange-be2.centre.ad.gla.ac.uk with Microsoft SMTPSVC(6.0.3790.4675);
+	 Mon, 14 Jun 2010 15:46:02 +0100
+Received: from euler.maths.gla.ac.uk ([130.209.66.74])
+	by cleese.cent.gla.ac.uk with esmtp (Exim 4.69)
+	(envelope-from <liu5@iupui.edu>)
+	id 1OOAvK-0000oY-81
+	for xyl1q@exchange.gla.ac.uk; Mon, 14 Jun 2010 15:46:02 +0100
+Received: from cleese.cent.gla.ac.uk ([130.209.16.34])
+	by euler.maths.gla.ac.uk with esmtp (Exim 4.63)
+	(envelope-from <liu5@iupui.edu>)
+	id 1OOAvK-0007C3-1A
+	for x.y.luo@maths.gla.ac.uk; Mon, 14 Jun 2010 15:46:02 +0100
+Received: from belushi.uits.indiana.edu ([129.79.1.188])
+	by cleese.cent.gla.ac.uk with esmtp (Exim 4.69)
+	(envelope-from <liu5@iupui.edu>)
+	id 1OOAvE-0000nf-TE
+	for x.y.luo@maths.gla.ac.uk; Mon, 14 Jun 2010 15:46:01 +0100
+Received: from iu-mssg-hub01.ads.iu.edu (iu-mssg-hub01.ads.iu.edu [10.79.1.88])
+	by belushi.uits.indiana.edu (8.14.2/8.13.8/IU Messaging Team) with ESMTP id o5EEjqsh032289
+	for <x.y.luo@maths.gla.ac.uk>; Mon, 14 Jun 2010 10:45:54 -0400
+Received: from iu-mssg-mbx07.ads.iu.edu ([10.79.1.98]) by
+ iu-mssg-hub01.ads.iu.edu ([10.79.1.88]) with mapi; Mon, 14 Jun 2010 10:45:53
+ -0400
+From: "Liu, Yi" <liu5@iupui.edu>
+To: Xiaoyu <x.y.luo@maths.gla.ac.uk>
+CC: "Kassab, Ghassan S" <gkassab@iupui.edu>
+Date: Mon, 14 Jun 2010 10:45:52 -0400
+Subject: RE: to run the codes for  FE Mesh of LV
+Thread-Topic: to run the codes for  FE Mesh of LV
+Thread-Index: AcsLzh2tC2QPmD20QIW65bOb9A5dOAAAOttH
+Message-ID: <0D444F47E7E150449D4371E4E8DE29A50A00D4A3C5@iu-mssg-mbx07.ads.iu.edu>
+References: <0D444F47E7E150449D4371E4E8DE29A50A00D4A3C2@iu-mssg-mbx07.ads.iu.edu>,<4C163CF5.7050402@maths.gla.ac.uk>
+In-Reply-To: <4C163CF5.7050402@maths.gla.ac.uk>
+Accept-Language: en-US
+Content-Language: en-US
+X-MS-Has-Attach:
+X-MS-TNEF-Correlator:
+acceptlanguage: en-US
+Content-Type: text/plain; charset="iso-2022-jp"
+Content-Transfer-Encoding: quoted-printable
+MIME-Version: 1.0
+X-GLA-Spam-Scan: R
+X-GLA-Spam-Score:  0.0 (/)
+X-GLA-Spam-Report: _SUMMARY_
+X-GLA-Spam-Scan: R
+Return-Path: liu5@iupui.edu
+X-OriginalArrivalTime: 14 Jun 2010 14:46:02.0505 (UTC) FILETIME=[4F7F7F90:01CB0BD0]
+
+Dear Xiaoyu,
+
+Quick answers:
+1. are these from DenseView directly or did you have to pick/click the MRI =
+images to get these?=20
+    At this moment, I have to click the MRI image to get these. I suggest  =
+Dr. Wen to add this function into DENSEview, but he does not seem to have t=
+ime to take care of this. Maybe you can push him.
+
+2. So we only use 10 .....
+In the present code, you can use upto 2000 points per slice, and uptp 40 sl=
+ices. There is an input file to tell the program of these information
+
+3. Are these the only input information.....
+Yes, if you only need the FEM mesh. Since we do not have the apex point, th=
+ese is an input file to manually set the apex points (inner and outer). Als=
+o, there are two input files to shift and rotate the image. All input files=
+ are in the folder 'InputFiles'
+
+Yi
+
+
+From: Xiaoyu [x.y.luo@maths.gla.ac.uk]
+Sent: Monday, June 14, 2010 10:30 AM
+To: Liu, Yi
+Cc: yzhu@maths.gla.ac.uk; XINGSHUANG MA; =1B$B]VL1=1B(B; wanghmxj; =1B$BCJ@=
+c1>=1B(B; wgl
+Subject: Re: to run the codes for  FE Mesh of LV
+
+Dear Yi,
+
+Many thanks.  Just to check with you, the files in the /InputFiles folder, =
+are these from DenseView directly or
+did you have to pick/click the MRI images to get these?   So we only use 10=
+ points around each slice, and 10 slices each
+surface (inner and outer)?  Are these the only input information we need fr=
+om MRI?
+
+Regards,
+Xiaoyu
+
+On 14/06/2010 15:21, Liu, Yi wrote:
+> Dear Xiaoyu,
+>           Please unzip the .rar file for my codes to generate 3D FE mesh =
+of LV from endo/episurface contours.
+>           To get some basic idea how the codes work, you do:
+> 1. run A_*.f, and click on A_*.lay to view the result
+> 2. run B_*.f, and ...
+> 3. run C1...
+> 4. run C2...
+> 5. run D1... Then, VentricleMesh.dat is the 3D mesh
+>            I know you will have many questions. Feel free to ask after yo=
+u run the codes
+>            Yi
+>
+>
+> ________________________________________
+> From: Xiaoyu [x.y.luo@maths.gla.ac.uk]
+> Sent: Monday, June 14, 2010 6:04 AM
+> To: Liu, Yi
+> Subject: FE Mesh of LV
+>
+> Dear Yi,
+>
+> Just to let you know that I have received your *.rar file, thanks a lot.
+> I will let you know how we get on with it.
+>
+> Best,
+> Xiaoyu
+>
+> On 12/06/2010 19:09, Liu, Yi wrote:
+>> Dear Xiaoyu,
+>>           I tried to send the codes in an .rar file to you but your serv=
+er cleese.cent.gla.ac.uk rejected the delivery. Do you have hotmail account=
+?
+>>           Yi
+>>
+>> ________________________________________
+>> From: Liu, Yi
+>> Sent: Saturday, June 12, 2010 2:06 PM
+>> To: Xiaoyu
+>> Cc: YunFei Zhu; XINGSHUANG MA; Kassab, Ghassan S; wenh@nhlbi.nih.gov; Li=
+u, Yi
+>> Subject: codes for FE Mesh of LV
+>>
+>> Dear Xiaoyu,
+>>            Please unzip the attached for my codes to generate 3D FE mesh=
+ of LV from endo/episurface contours.
+>>            To get some basic idea how the codes work, you do:
+>> 1. run A_*.f, and click on A_*.lay to view the result
+>> 2. run B_*.f, and ...
+>> 3. run C1...
+>> 4. run C2...
+>> 5. run D1... Then, VentricleMesh.dat is the 3D mesh
+>>
+>>             I know you will have many questions. Feel free to ask after =
+you run the codes
+>>             Yi
+>>
+>> ________________________________________
+>> From: Xiaoyu [x.y.luo@maths.gla.ac.uk]
+>> Sent: Tuesday, June 01, 2010 12:32 PM
+>> To: Liu, Yi
+>> Cc: YunFei Zhu; XINGSHUANG MA
+>> Subject: Re: FE code
+>>
+>> Thanks a lot, Yi.  This will give us an idea of how things are working, =
+and then hopefully we will learn quicker with your next version.
+>>
+>> Regards,
+>> Xiaoyu
+>>
+>>
+>>
+>> On 01/06/2010 16:59, Liu, Yi wrote:
+>>> Dear Xiaoyu,
+>>>             I will email you the codes (not well polished) by this week=
+end. These code are independent of Dr. Han Wen's software DENSEview, which =
+is used to process the raw DENSE scan data. My codes further process the ou=
+tput from DENSEview.
+>>>             I have requested Dr. We to make a samll modificatiuon of DE=
+NSEview to make our processing easier. Hopefully, my suggestion is doable.
+>>>             Yi
+>>>
+>>>
+>>> ________________________________________
+>>> From: Xiaoyu [x.y.luo@maths.gla.ac.uk]
+>>> Sent: Monday, May 31, 2010 7:27 AM
+>>> To: Liu, Yi
+>>> Cc: YunFei Zhu; XINGSHUANG MA
+>>> Subject: Re: FE code
+>>>
+>>> Dear Yi,
+>>>
+>>> Is it possible to have a preliminary version of your code now?  We are =
+going to
+>>> install DENSE on Thursday and ask questions about it, it will be very h=
+elpful if
+>>> we know what your code is like and also what images you may need to tes=
+t it since
+>>> there are a lot of them.  Thanks.
+>>>
+>>> Best wishes,
+>>> Xiaoyu
+>>>
+>>> On 27/05/2010 22:35, Liu, Yi wrote:
+>>>> Dear Xiaoyu
+>>>> No problem.
+>>>> Actually, I am waiting for Dr Wen to modify his software DENSEview.
+>>>> I have used DENSEview for a while. You may ask me if you have question=
+ about hw to use it.
+>>>> Yi
+>>>>
+>>>> ________________________________________
+>>>> From: Xiaoyu Luo [x.y.luo@maths.gla.ac.uk]
+>>>> Sent: Wednesday, May 26, 2010 5:48 PM
+>>>> To: Liu, Yi
+>>>> Subject: Re: FE code
+>>>>
+>>>> Dear yi,
+>>>> I am away for a few days so can't send any images to you yet. l was to=
+ld that dense can' be installed on my pc so i should have denseview. But i =
+don't know for sure. Will check when i return.
+>>>> Xiaoyu
+>>>> --
+>>>> Sent from my Nokia N900
+>>>> ----- Original message -----
+>>>>> Dear Xiaoyu,
+>>>>>                    Do you have a sample dataset of the epi/endo surfa=
+ce contour that I can
+>>>>> use to test my codes?                Are you using DENSEview to proce=
+ss DENSE data?
+>>>>>                    Yi
+>>>>>
+>>>>> ________________________________________
+>>>>> From: Xiaoyu [x.y.luo@maths.gla.ac.uk]
+>>>>> Sent: Wednesday, May 26, 2010 4:22 AM
+>>>>> To: Liu, Yi
+>>>>> Subject: Re: FE code
+>>>>>
+>>>>> Dear Yi,
+>>>>>
+>>>>> We do both short and long-axis slices, but mostly focus on the short-=
+axis
+>>>>> slices, i.e. almost circular shapes. Currently we cut 6mm without gap=
+s (for
+>>>>> generating 3D mesh which we did last Friday), and also 12mm without g=
+aps (for
+>>>>> DENSE this Friday).  I was told these two need to be done separately.=
+ We do this
+>>>>> together with Tracy, the radiologist, so basically we can tell her wh=
+at we want.
+>>>>> However, you are right, the apex might be missing, so we could add ap=
+ex point.
+>>>>> Once we have your code, we will also know better what will be needed =
+from DENSE.
+>>>>>        We can also adjust your code if necessary, but this will give =
+us a very good
+>>>>> starting point. By the way, do you build fibre structures?  If not, t=
+his could
+>>>>> be something we can add on.
+>>>>>
+>>>>> Regards,
+>>>>> Xiaoyu
+>>>>>
+>>>>> On 25/05/2010 22:45, Liu, Yi wrote:
+>>>>>> Dear Xiaoyu,
+>>>>>>                        How will you scan the heart with DENSE? Short=
+-axis slices only? Or
+>>>>>> both short-axis and long-axis slices? I like to know this for LV mes=
+h
+>>>>>> generation.                    If there are only short-axis slice, c=
+onsider that the
+>>>>>> spatial distance between slices is typically 6~12mm, the apex of end=
+o and epi
+>>>>>> cardial surfaces will be very likely missing, and you will need to a=
+dd
+>>>>>> artificially apex points.                    Yi
+>>>>>>
+>>>>>> ________________________________________
+>>>>>> From: Xiaoyu Luo [x.y.luo@maths.gla.ac.uk]
+>>>>>> Sent: Wednesday, May 19, 2010 2:15 PM
+>>>>>> To: Liu, Yi
+>>>>>> Subject: Re: FE code
+>>>>>>
+>>>>>> I see. Thanks a lot.
+>>>>>> Xiaoyu
+>>>>>> --
+>>>>>> Sent from my Nokia N900
+>>>>>> ----- Original message -----
+>>>>>>> Yes. I will send you both parts.
+>>>>>>> DENSE gives the displacement tensor. Dr. Han's software DENSEview a=
+lso
+>>>>>>> calculates the strain, but is limited to 2D in-plane strain. Yi
+>>>>>>> ________________________________________
+>>>>>>> From: Xiaoyu [x.y.luo@maths.gla.ac.uk]
+>>>>>>> Sent: Wednesday, May 19, 2010 12:39 PM
+>>>>>>> To: Liu, Yi
+>>>>>>> Subject: Re: FE code
+>>>>>>>
+>>>>>>> Dear Yi,
+>>>>>>>
+>>>>>>> Thanks for being so helpful.  Yes, take your time and send me the c=
+ode when
+>>>>>>> you are ready, this way, you won't be bothered by me asking questio=
+ns all
+>>>>>>> time (only some of the time...).
+>>>>>>>
+>>>>>>> I am interested in both parts, can you give me both?      I initial=
+ly thought
+>>>>>>> DENSE will automatically give us the strains.
+>>>>>>>
+>>>>>>> Best wishes,
+>>>>>>> Xiaoyu
+>>>>>>>
+>>>>>>>
+>>>>>>> On 19/05/2010 17:32, Liu, Yi wrote:
+>>>>>>>> Dear Xiaoyu,
+>>>>>>>>                                            It is great to start a =
+collaboration.
+>>>>>>>>                                            I will email you the so=
+urce codes. The codes are
+>>>>>>>> written in Fortran. There is no user interface.                   =
+                   Please
+>>>>>>>> allow me some time to organize the codes so that you can read it m=
+ore
+>>>>>>>> efficiently. We have plan to conduct DENSE scans soon. So, I will =
+revisit
+>>>>>>>> the codes to make them better before the scans.                   =
+                   The
+>>>>>>>> codes include 2 major parts: 1. reconstruct geometric model of LV =
+from
+>>>>>>>> endo/epicardial contour lines, and make 8-node brick elements 2. f=
+it full
+>>>>>>>> 3-D displacement field from the displacements of discrete DENSE ma=
+terial
+>>>>>>>> tracking points, and then calculate all types of strains.
+>>>>>>>>        I am thinking to extend 1 for LV+RV.                       =
+               Which part do
+>>>>>>>> you need for now?                                Yi
+>>>>>>>>
+>>>>>>>> ________________________________________
+>>>>>>>> From: Xiaoyu Luo [x.y.luo@maths.gla.ac.uk]
+>>>>>>>> Sent: Wednesday, May 19, 2010 11:25 AM
+>>>>>>>> To: Liu, Yi
+>>>>>>>> Subject: FE code
+>>>>>>>>
+>>>>>>>> Dear Yi,
+>>>>>>>>
+>>>>>>>> This is Xiaoyu.  We are interested in using your FE code to constr=
+uct a
+>>>>>>>> heart model from Dense. I am very impressed by your work.  Please =
+can you
+>>>>>>>> e-mail me the code (or upload it somewhere for me to download) wit=
+h some
+>>>>>>>> basic explanations?          We have a MRI machine here with Dense=
+ installed
+>>>>>>>> by Dr. Han Wen.  Thank you very much.
+>>>>>>>>
+>>>>>>>> Best wishes,
+>>>>>>>> Xiaoyu
+>>>>>>>> --
+>>>>>>>> Prof. Xiaoyu Luo
+>>>>>>>> Department of Mathematics
+>>>>>>>> University of Glasgow, charity No. SC004401
+>>>>>>>> Glasgow G12 8QW
+>>>>>>>> E-mail: x.y.luo@maths.gla.ac.uk
+>>>>>>>> Tel: +44 (0)141 3304746
+>>>>>>>> Fax: +44 (0)141 3304111
+>>>>>>>> Office: Maths-507
+>>>>>>>> Web:www.maths.gla.ac.uk/~xl
+>>>>>>>
+>>>>>>> --
+>>>>>>> University of Glasgow, charity No. SC004401
+>>>>>
+>>>>> --
+>>>>> University of Glasgow, charity No. SC004401
+>>>
+>>> --
+>>> University of Glasgow, charity No. SC004401
+>>
+>> --
+>> University of Glasgow, charity No. SC004401
+>
+> --
+> University of Glasgow, charity No. SC004401
+
+--
+University of Glasgow, charity No. SC004401=
