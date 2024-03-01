@@ -1,0 +1,22 @@
+This process is almost identical to the SA boundary segmentation but this time there are always
+3 LA images to work through.
+
+User must manually select which slice to work on, 
+
+1) draw a rectangular box to define the region of interest (double click inside the box when this is done)
+
+2) user can then start defining the endocardial boundary (using a greater concentration of points around
+any turns to avoid the boundary being too sharp at these points). 
+BEFORE PLACING THE LAST POINT click on 'stop', then place the final point and click on re-plot.
+After this is clicked, user is free to move boundary points around to fine tune boundary definition.
+When the boundary definition is complete (making sure the figure is active) push the space key, 
+this will draw the previously defined boundary over top of the image and allow the user to move on 
+to the epicardial boundary.
+
+3) epicardial boundary process is carried out the same as above, however now when pushing the space key 
+it will return to the list of SA slices and allow the user to click on the next slice and complete
+this process again.
+
+4) carry out this above process for all 3 LA images
+
+5) all SA boundary pictures are saved in the results folder which was created in the previous step.  

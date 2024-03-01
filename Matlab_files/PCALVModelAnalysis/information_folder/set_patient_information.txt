@@ -1,0 +1,15 @@
+The boxes below should be filled with the appropriate information for the patient under investigation.
+
+patient id, scan time (baseline or follow up) and diastole time must all be set.
+
+End Diastole image, End systole image and Early diastole image are all set between 1 and the No. of images
+(which is generally 25 but can be 20). This information is obtained by watching through a heartbeat 
+and ascertaining which image corresponds to which of these images (Note that End diastole generally
+corresponds to image no 1)
+
+First SA slice is often set to SA0 but depending on the quality of these images it may be 
+necessary to start construction further down the left ventricle. As such it is possible to
+set which of the SA slices is the base.
+
+Last SA slice is the short axis slice that has been taken closest to the apex. (this can vary
+quite widely) 

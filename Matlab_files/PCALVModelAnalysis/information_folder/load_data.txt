@@ -1,0 +1,27 @@
+This will load all the files that are necessary for the mesh reconstruction.
+These must be saved in the folder that is indicated in 'Input folders where all MRI images are stored'
+- note this should not be the path to the specific patient folder but rather the folder that contains 
+all of the patient data, the patient ID and scan time provided will then link to the specific folder.
+
+When running this a directory will be created (in the relevant patient folder) called
+'patientIDscantime_results_Early_diastole' or 'patientIDscantime_results_End_diastole'.
+This is however only the case if the directory does not already exist, if it does it will
+not be overwritten.
+
+Before running this (as well as setting patient ID, Scan time and Diastole time), the boxes underneath
+must also be filled out.
+
+1) No of images - the number of images taken over one heart beat (this must be either 20 or 25).
+
+2) First SA slice - this is the uppermost SA bound that will be used in the mesh reconstruction.
+even though most patients first SA slice is 0 this may not always be the first slice to be used.
+
+3) Last SA slice - this is always the final SA slice for which data exists.
+
+4) End diastole/End systole/Early diastole image - which of the MRI images corresponds to which of these 
+times, generally this must be observed by examining the images over a full period and making a suitable
+determination.
+
+5) If any of the information in these boxes is changed then Load data MUST BE RUN AGAIN. This is to ensure
+that the subsequent programmes use the correct data. 
+

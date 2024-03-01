@@ -1,0 +1,20 @@
+This step involves carrying out short axis segmentations for all of the slices indicated above
+(from First SA slice to Last SA slice).
+
+User must manually select which slice to work on, 
+
+1) draw a rectangular box to define the region of interest (double click inside the box when this is done)
+
+2) user can then start defining the endocardial boundary using between 8-10 points. 
+BEFORE PLACING THE LAST POINT click on 'stop', then place the final point and click on re-plot.
+After this is clicked, user is free to move boundary points around to fine tune boundary definition.
+When the boundary definition is complete (making sure the figure is active) push the space key, 
+this will draw the previously defined boundary and allow the user to move on to the epicardial boundary.
+
+3) epicardial boundary process is carried out the same as above, now when pushing the space key 
+it will return to the list of SA slices and allow the user to click on the next slice and complete
+this process again.
+
+4) carry out this above process for all of the required SA images
+
+5) all SA boundary pictures are saved in the results folder which was created in the previous step.  

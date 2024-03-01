@@ -1,0 +1,19 @@
+1) The first box below must be filled out with the full path to the folder containing MRI data.
+This should not point to any specific patient folders, but instead should point to the directory 
+that contains all patient MRI data (e.g. that is the folder containing patient001, patient002, #
+patient003...)
+
+2) The second box should point to the folder that contains all of the MATLAB codes that are needed to run
+mesh generation. If this main file is saved in the same folder as the other MATLAB files then this 
+can be left blank. 
+
+3) When running the processes 'Generate Mesh' and 'Compute Growth Tensor' the data that these produce 
+can be saved to an excel file. If the user wishes to do this then the path where the excel file should
+be saved should be entered into this box (note that it is not necessary to generate an excel file in this
+folder as the code will do this). If this is left blank then the file will be saved in the same directory
+as that inserted into the first box.
+
+4) 'Name of patient study' is needed so that the correct file is loaded.
+
+5) Max Patient id is needed to ensure that the correct numbering system is used when searching through
+the patients. 
