@@ -1,0 +1,30 @@
+
+
+%%this is for MI258
+% abaqusInputDir = 'C:\Users\hg67u\ownCloud\clientsync\Stats-Heart-Modelling\Weiwei-code\LVModelGenerationUsingFitting_New_withMapping\results\MI258\scan1\fibreGeneration';
+
+% abaqusInputDir = 'C:\Users\hg67u\ownCloud\clientsync\Stats-Heart-Modelling\Weiwei-code\LVModelGenerationUsingFitting_New_withMapping\results\MI167\scan1\fibreGeneration';
+
+%abaqusInputDir = 'C:\Users\hg67u\ownCloud\clientsync\Stats-Heart-Modelling\Weiwei-code\LVModelGenerationUsingFitting_New_withMapping\results\MI167_new\scan1\fibreGeneration';
+
+%abaqusInputDir = 'E:\WenGuangLi\Results\MI171\scan4\fibreGeneration';
+
+%abaqusInputDir = 'E:\WenGuangLi\Results\MI167\scan3\fibreGeneration';
+
+abaqusInputDir = '\Users\sr248u\OneDrive - University of Glasgow\Scott_working_directory\Core\Modelling\Results\empa083\083c\earlyDiastole\fibreGeneration';
+dataResult = '\Users\sr248u\OneDrive - University of Glasgow\Scott_working_directory\Core\Modelling\Results\empa083\083c\eDiastole\fibreGeneration\Results_fiber_60_45'; 
+abaqusDir = '\Users\sr248u\OneDrive - University of Glasgow\Scott_working_directory\Core\Modelling\Results\empa083\083c\endDiastole\abaqusSimulation';
+
+
+
+workingDir = pwd();
+cd(abaqusInputDir);
+if ~exist(dataResult, 'dir')
+    mkdir(dataResult);
+end
+cd(dataResult);
+dataResult = pwd();
+cd(workingDir);
+
+
+
